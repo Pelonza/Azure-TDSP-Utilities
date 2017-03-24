@@ -3,6 +3,9 @@ trainDF$Pclass<-factor(trainDF$Pclass,levels=c(1,2,3),labels=c("First","Second",
 trainDF$Sex<-factor(trainDF$Sex)
 trainDF<-na.omit(trainDF)
 
+#There was an error in the original yaml file for the xgBoost 
+#-- the subsample and child-lines are reversed
+
 #levels(trainDF$Survived)[1]<-"Passed"
 #levels(trainDF$Survived)[2]<-"Lived"
 #levels(trainDF$Pclass)[1]<-"First"
