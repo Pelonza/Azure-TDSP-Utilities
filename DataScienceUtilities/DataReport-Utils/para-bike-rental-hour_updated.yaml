@@ -1,0 +1,31 @@
+DataFilePath: ..\\..\\Data\\Common\\UCI_Bike_Rental\\hour_dt_components.csv
+HasHeader: yes
+Separator: ','
+Target: cnt
+ColumnsToExclude:
+- instant
+- dteday
+RLogFilePath: bikesharing-hour.log.r
+CategoricalColumns:
+- season
+- yr
+- mnth
+- hr
+- holiday
+- weekday
+- workingday
+- weathersit
+- windspeed
+- dteday_autogen_year
+- dteday_autogen_month
+- dteday_autogen_week
+- dteday_autogen_day
+- dteday_autogen_wday
+NumericalColumns:
+- temp
+- atemp
+- hum
+- casual
+- registered
+- cnt
+
